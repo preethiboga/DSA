@@ -1,0 +1,11 @@
+include 'emu8086.inc' 
+call scan_num
+cmp cx,0
+jg label  
+print 'negative'
+ret
+label:
+  print 'postive'   
+  hlt 
+define_scan_num
+define_scan_num_uns  
